@@ -1,7 +1,7 @@
 # Bering-Sea-Calanus-PSPM
 R scripts and data used in Grant Woodard's 2023 Master's thesis "Climate Change and Density Dependence in the North Pacific: Applications to Salmon Run Forecasting and Plankton Population Dynamics".
 
-Use the NPRB versions of the script. The clean developed some bugs when I was removing some "unused and unecessary" code and I can't figure out how to delete them.
+Use the NPRB versions of the model implementation scripts. The clean developed some bugs when I was removing some "unused and unecessary" code and I can't figure out how to delete them.
 
   Bering_SST_12_06.xslx
       Bering SST temperature from NOAA physical sciences laboratory
