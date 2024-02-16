@@ -10,10 +10,10 @@ This repository can be used to fit a stage-structured biomass model for the cope
 
 The repository contains the following data files:
 
-  Bering_SST_12_06.xslx
+  `Bering_SST_12_06.xslx`
       Bering SST temperature from NOAA physical sciences laboratory
 
-  Ikeda_2007_Respiration_Data.csv
+  `Ikeda_2007_Respiration_Data.csv`
       Copepod respiration data
 
       Ikeda, T., Sano, F., and Yamaguchi, A., 2007. Respiration in marine pelagic copepods: a global-
@@ -22,7 +22,7 @@ The repository contains the following data files:
       Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment 
       Report of the Intergovernmental Panel on Climate Change.
 
-  Saiz_Calbert_2007_Calanus_Ingestion.csv
+  `Saiz_Calbert_2007_Calanus_Ingestion.csv`
       Calanus Respiration data
 
       Saiz, E., and A. Calbet. 2007. Scaling of feeding in marine calanoid copepods. Limnology and 
@@ -35,11 +35,11 @@ The repository contains the following files for running the analyses:
 StageStructuredBiomass_GW_Calanus_max_ingestion_temp_dependent_V5_11_15_2023.R
     PSPM model structure is contained here. Required by model implementation scripts for them to run.
 
-Parameter_Estimation.R
+`Parameter_Estimation.R`
 
     Code detailing parameter estimation from Ikeda et al. 2007 and Saiz and Calbet 2007 data
   
-Model_Implementation_1_NPRB.R
+`Model_Implementation_1_NPRB.R`
 
     Runs Basic PSPM model using parameters defined at top of code (or if using model defaults in     
     StageStructuredBiomass_GW_Calanus_max_ingestion_temp_dependent_V5_11_15_2023.R )
@@ -53,7 +53,7 @@ Model_Implementation_1_NPRB.R
     size at maturity at the default temperature to assess changes in stage ratios.
     5. It also produces relevant graphs
 
-Model_Impelemntation_2_NPRB.R
+`Model_Impelemntation_2_NPRB.R`
 
     Loops through first 3 steps of model 1 at varing sizes at maturity and saves the extinction temperature.
     Graphs temperature at extinction vs size at maturity.
