@@ -14,12 +14,12 @@ The repository contains the following data files:
     Bering SST temperature from NOAA physical sciences laboratory
 
   `Ikeda_2007_Respiration_Data.csv`
-    
     Copepod respiration data
 
       Ikeda, T., Sano, F., and Yamaguchi, A., 2007. Respiration in marine pelagic copepods: a global-
       bathymetric model. Marine Ecology Progress Series 339: 215-219
       Intergovernmental Panel on Climate Change (IPCC). 2014. Climate Change 2014: 
+      
       Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment 
       Report of the Intergovernmental Panel on Climate Change.
 
