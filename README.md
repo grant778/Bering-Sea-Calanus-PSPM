@@ -1,33 +1,14 @@
-# Bering-Sea-Calanus-PSPM
+# PSPM for Calanus spp in the Bering Sea
+
 R scripts and data used in Grant Woodard's 2023 Master's thesis "Climate Change and Density Dependence in the North Pacific: Applications to Salmon Run Forecasting and Plankton Population Dynamics".
 
-Analyses performed in  R version 4.2.2 (2022-10-31)
+## Summary
 
-MIT License
+This repository can be used to fit a stage-structured biomass model for the copepod Calanus marshallae/glacialis using the R package `PSPManalysis`. The model is used to predict population impacts of ocean warming by modeling the direct effects of environmental temperature on individual physiology and translating those effects to the population level.
 
-Copyright (c) 2024 grant778
+## Data 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-
-Use the NPRB versions of the model implementation scripts. The clean developed some bugs when I was removing some "unused and unecessary" code and I can't figure out how to delete them.
+The repository contains the following data files:
 
   Bering_SST_12_06.xslx
       Bering SST temperature from NOAA physical sciences laboratory
@@ -41,13 +22,15 @@ Use the NPRB versions of the model implementation scripts. The clean developed s
       Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment 
       Report of the Intergovernmental Panel on Climate Change.
 
-
   Saiz_Calbert_2007_Calanus_Ingestion.csv
       Calanus Respiration data
 
       Saiz, E., and A. Calbet. 2007. Scaling of feeding in marine calanoid copepods. Limnology and 
       Oceanography 52: 487-921.
 
+## Analyses 
+
+The repository contains the following files for running the analyses:
 
 StageStructuredBiomass_GW_Calanus_max_ingestion_temp_dependent_V5_11_15_2023.R
     PSPM model structure is contained here. Required by model implementation scripts for them to run.
@@ -74,3 +57,33 @@ Model_Impelemntation_2_NPRB.R
 
     Loops through first 3 steps of model 1 at varing sizes at maturity and saves the extinction temperature.
     Graphs temperature at extinction vs size at maturity.
+
+## Software 
+
+Analyses performed in R version 4.2.2 (2022-10-31). 
+
+The PSPM model was run using the R package `PSPManalysis` version 0.3.9.
+
+## Copyright
+
+MIT License
+
+Copyright (c) 2024 grant778
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
