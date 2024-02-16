@@ -60,11 +60,13 @@ The repository contains the following files for running the analyses:
   Loops through first 3 steps of model 1 at varing sizes at maturity and saves the extinction temperature.
   Graphs temperature at extinction vs size at maturity.
 
-## Software 
+## Software and computational requirements
 
 Analyses performed in R version 4.2.2 (2022-10-31). 
 
 The PSPM model was run using the R package `PSPManalysis` version 0.3.9.
+
+All analyses can be run on a personal laptop computer without the need for parallelization or high performance computing.
 
 ## Copyright
 
